@@ -1,0 +1,14 @@
+flask
+flask-cors
+numpy
+pandas
+tensorflow
+opencv-python
+deepface
+librosa
+pretty-midi
+music21
+scikit-learn
+joblib
+noisereduce
+python-magic

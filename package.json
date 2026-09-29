@@ -1,0 +1,31 @@
+{
+  "name": "raga-alchemy",
+  "version": "1.0.0",
+  "description": "AI-powered Indian Classical Music System",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && python run.py",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
+    "train-models": "cd ml_models/training_scripts && python train_all_models.py",
+    "test": "cd backend && python -m pytest tests/",
+    "lint": "cd backend && flake8 . && cd ../frontend && npx eslint src/",
+    "docker-build": "docker-compose up --build",
+    "docker-dev": "docker-compose -f docker-compose.dev.yml up"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": [
+    "ai",
+    "machine-learning",
+    "music",
+    "indian-classical",
+    "raga",
+    "midi",
+    "emotion-detection"
+  ],
+  "author": "Raga Alchemy Team",
+  "license": "MIT"
+}
